@@ -24,7 +24,7 @@ function App() {
     setTime(0)
   }
   const formate=()=>{
-    let cs = ('0'+(time%100)).slice(-2);
+    let cs = ('0'+(time)).slice(-2);
     let sec =('0'+Math.floor(time/100)%60).slice(-2)
     let min =('0'+Math.floor(time/6000)%60).slice(-2)
     let hour=('0'+Math.floor(time/360000)%24).slice(-2);
